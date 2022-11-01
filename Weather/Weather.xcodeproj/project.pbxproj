@@ -11,6 +11,7 @@
 		C09BF92B291168C4000EDA70 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BF92A291168C4000EDA70 /* CurrentWeather.swift */; };
 		C09BF92D29116B69000EDA70 /* DailyWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BF92C29116B69000EDA70 /* DailyWeather.swift */; };
 		C09BF92F29116C48000EDA70 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BF92E29116C48000EDA70 /* City.swift */; };
+		C0A60D432911C29A0010F50F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A60D422911C29A0010F50F /* Constants.swift */; };
 		C0BA925029116D9700944FCF /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA924F29116D9700944FCF /* WeatherManager.swift */; };
 		C0BA92532911755900944FCF /* WeatherInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA92522911755900944FCF /* WeatherInterface.swift */; };
 		C0BA925A2911877200944FCF /* cloud.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C0BA92592911877200944FCF /* cloud.mp4 */; };
@@ -37,6 +38,7 @@
 		C09BF92A291168C4000EDA70 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		C09BF92C29116B69000EDA70 /* DailyWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeather.swift; sourceTree = "<group>"; };
 		C09BF92E29116C48000EDA70 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		C0A60D422911C29A0010F50F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C0BA924F29116D9700944FCF /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		C0BA92522911755900944FCF /* WeatherInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInterface.swift; sourceTree = "<group>"; };
 		C0BA92592911877200944FCF /* cloud.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloud.mp4; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		C0A60D412911C28F0010F50F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C0A60D422911C29A0010F50F /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		C0BA92512911753900944FCF /* Interface */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +199,7 @@
 		C0F13A6329106B5600394BC5 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				C0A60D412911C28F0010F50F /* Constants */,
 				C0BA926229118A4C00944FCF /* Extensions */,
 				C0BA925B2911886100944FCF /* Welcome */,
 				C0BA92542911850200944FCF /* Resource */,
@@ -372,6 +383,7 @@
 				C0BA926429118A5D00944FCF /* UIButton+Extension.swift in Sources */,
 				C0F13A6929106B5600394BC5 /* ViewController.swift in Sources */,
 				C0BA925E2911888300944FCF /* WelcomeViewController.swift in Sources */,
+				C0A60D432911C29A0010F50F /* Constants.swift in Sources */,
 				C09BF92D29116B69000EDA70 /* DailyWeather.swift in Sources */,
 				C0F13A6529106B5600394BC5 /* AppDelegate.swift in Sources */,
 				C0F13A8429106E9A00394BC5 /* LoadingViewModel.swift in Sources */,

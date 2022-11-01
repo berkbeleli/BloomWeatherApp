@@ -30,21 +30,14 @@ class LoadingViewController: UIViewController {
   }
   
   private func connection() {
-    viewModel.showLoading = {
-      DispatchQueue.main.async {
-        self.animationView?.play()
-      }
-    }
-    
-    viewModel.hideLoading = {
+    viewModel.startApp()
+     self.animationView?.play()
+    viewModel.loadWelcomeVC = {
       DispatchQueue.main.async {
         self.animationView?.stop()
       }
+      guard let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: Constants.welcomeView) as? WelcomeViewController else { return }
+      self.navigationController?.pushViewController(vc, animated: false)
     }
-    
-    viewModel.checkIfFirstOpeningApp()
   }
-    
-
-
 }

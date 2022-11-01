@@ -45,7 +45,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="0fN-xo-rHE">
             <objects>
-                <viewController storyboardIdentifier="WelcomeViewController" id="ltf-do-MCY" customClass="WelcomeViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeView" id="ltf-do-MCY" customClass="WelcomeViewController" customModule="Weather" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SSy-4I-zO8">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
