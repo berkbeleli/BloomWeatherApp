@@ -40,4 +40,9 @@ extension LoadingViewModel: CLLocationManagerDelegate {
     }
   }
   
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    guard let location = manager.location?.coordinate else { return }
+    
+  }
+  
 }
