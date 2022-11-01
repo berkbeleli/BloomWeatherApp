@@ -47,6 +47,4 @@ class WeatherInterface {
         completion()
     }
   }
-  
-  
 }
