@@ -15,7 +15,7 @@ class LoadingViewModel: NSObject {
   var hideLoading: (() -> ())?
   var showError: (() -> ())?
   var loadWeatherVC: (() -> ())?
-  var loadStartVC: (() -> ())?
+  var loadWelcomeVC: (() -> ())?
   var weather = WeatherInterface()
   
   private let locationManager = CLLocationManager()
@@ -31,7 +31,7 @@ class LoadingViewModel: NSObject {
   func checkIfFirstOpeningApp() {
     showLoading?()
     if UserDefaults.standard.value(forKey: "firstOpen") == nil {
-      loadStartVC?()
+      loadWelcomeVC?()
       checkNetworkStatus()
     } else {
       checkNetworkStatus()
@@ -69,8 +69,8 @@ extension LoadingViewModel: CLLocationManagerDelegate {
   }
   
   func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-    let manager = CLLocationManager()
     if CLLocationManager.locationServicesEnabled() {
+      let manager = CLLocationManager()
       switch manager.authorizationStatus {
       case .notDetermined, .restricted, .denied:
         getWeatherData()

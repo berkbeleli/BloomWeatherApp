@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "The \"BloomWeather\" app provides accurate forecast wherever you are. Therefore You should allow us to use your Location Services."; ObjectID = "5Dd-7Y-PkE"; */
+"5Dd-7Y-PkE.text" = "The \"BloomWeather\" app provides accurate forecast wherever you are. Therefore You should allow us to use your Location Services.";
+
+/* Class = "UILabel"; text = "We use and sharee the precise location of your device based on our Privacy Policy."; ObjectID = "BeX-B9-K25"; */
+"BeX-B9-K25.text" = "We use and sharee the precise location of your device based on our Privacy Policy.";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "LM6-0w-yx0"; */
+"LM6-0w-yx0.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Welcome!"; ObjectID = "j2K-IG-D8M"; */
+"j2K-IG-D8M.text" = "Welcome!";
