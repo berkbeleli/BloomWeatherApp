@@ -13,6 +13,7 @@
 		C09BF92F29116C48000EDA70 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09BF92E29116C48000EDA70 /* City.swift */; };
 		C0BA925029116D9700944FCF /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA924F29116D9700944FCF /* WeatherManager.swift */; };
 		C0BA92532911755900944FCF /* WeatherInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BA92522911755900944FCF /* WeatherInterface.swift */; };
+		C0BA925A2911877200944FCF /* cloud.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C0BA92592911877200944FCF /* cloud.mp4 */; };
 		C0F13A6529106B5600394BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F13A6429106B5600394BC5 /* AppDelegate.swift */; };
 		C0F13A6729106B5600394BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F13A6629106B5600394BC5 /* SceneDelegate.swift */; };
 		C0F13A6929106B5600394BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F13A6829106B5600394BC5 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		C09BF92E29116C48000EDA70 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		C0BA924F29116D9700944FCF /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		C0BA92522911755900944FCF /* WeatherInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInterface.swift; sourceTree = "<group>"; };
+		C0BA92592911877200944FCF /* cloud.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloud.mp4; sourceTree = "<group>"; };
 		C0F13A6129106B5600394BC5 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F13A6429106B5600394BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0F13A6629106B5600394BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 			path = Interface;
 			sourceTree = "<group>";
 		};
+		C0BA92542911850200944FCF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C0BA92592911877200944FCF /* cloud.mp4 */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		C0F13A5829106B5600394BC5 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 		C0F13A6329106B5600394BC5 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				C0BA92542911850200944FCF /* Resource */,
 				C09BF92729116871000EDA70 /* API */,
 				C09BF92629116787000EDA70 /* StoryBoards */,
 				C0F13A7E29106CFF00394BC5 /* Loading */,
@@ -250,6 +261,7 @@
 				C0F13A7429106B5800394BC5 /* LaunchScreen.storyboard in Resources */,
 				C0F13A7129106B5800394BC5 /* Assets.xcassets in Resources */,
 				C0F13A7D29106CB400394BC5 /* loader.json in Resources */,
+				C0BA925A2911877200944FCF /* cloud.mp4 in Resources */,
 				C0F13A6C29106B5600394BC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
