@@ -15,7 +15,7 @@ enum WeatherError: Error {
 class WeatherManager {
   
   static let shared = WeatherManager()
-  private let apiKey = "1c2ba745810db56a9f945361a2520a0a"
+  private let apiKey = "API KEY HERE"
   
   func getCurrentWeatherData(lat: Double, lon: Double, locale: String, completion: @escaping(Result<CurrentWeather,WeatherError>) -> Void) {
     guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&lang=\(locale)&units=metric&appid=\(apiKey)") else {
