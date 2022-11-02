@@ -80,3 +80,12 @@ class WeatherViewModel: NSObject {
   
   
 }
+
+//MARK: - Extensions
+extension WeatherViewModel: SearchViewModelDelegate {
+    func setLocation(_ lat: Double, _ lon: Double) {
+        self.weather.lon = lon
+        self.weather.lat = lat
+        getWeatherData()
+    }
+}

@@ -163,6 +163,11 @@ class WeatherViewController: UIViewController {
   }
   
   @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
+    guard let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: Constants.searchView) as? SearchViewController else { return }
+  
+    vc.viewModel.delegate = self.viewModel
+    vc.modalPresentationStyle = .overFullScreen
+    present(vc, animated: true)
   }
   
   

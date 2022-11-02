@@ -18,9 +18,9 @@ class SearchCitiesTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-  func setupCell(filteredCities: String) {
-    cityNameLbl.text = ""
-    countryNameLbl.text = ""
+  func setupCell(filteredCities: SearchCellViewModel) {
+    cityNameLbl.text = filteredCities.city
+    countryNameLbl.text = filteredCities.country
     self.backgroundColor = .clear
   }
  

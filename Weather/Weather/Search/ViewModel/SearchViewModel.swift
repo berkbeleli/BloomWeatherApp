@@ -36,6 +36,15 @@ class SearchViewModel: NSObject {
       }
   }
   
+  func getCity() {
+      loadCities()
+      actualLocation()
+  }
+  
+  func loadCities() {
+    CityInterface.shared.getCity()
+  }
+  
   func didSelectRow(at indexPath: IndexPath) {
       if filteredCities.isEmpty {
           if locationManager.authorizationStatus != .denied {
@@ -47,7 +56,7 @@ class SearchViewModel: NSObject {
   }
   
   func searchCity(text: String) {
-      guard let cities = CityModel.shared.cities else { return }
+      guard let cities = CityInterface.shared.cities else { return }
       
       filteredCities = cities.filter({ (city: City) in
         if text.count > 2 && city.name!.lowercased().contains(text.lowercased()) {

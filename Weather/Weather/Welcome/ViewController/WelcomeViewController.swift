@@ -46,11 +46,11 @@ class WelcomeViewController: UIViewController {
     // Create the video player item
     let item = AVPlayerItem(url: url)
     // Assign an array of 1 item to AVQueuePlayer
-    var videoPlayer = AVQueuePlayer(items: [item])
+    let videoPlayer = AVQueuePlayer(items: [item])
     // Loop the video
     playerLooper = AVPlayerLooper(player: videoPlayer, templateItem: item)
     // Create the layer
-    var videoPlayerLayer = AVPlayerLayer(player: videoPlayer)
+    let videoPlayerLayer = AVPlayerLayer(player: videoPlayer)
     // Adjust the size and frame
     videoPlayerLayer.frame = view.bounds
     videoPlayerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
