@@ -147,12 +147,12 @@ class WeatherViewController: UIViewController {
     }
     
     viewModel.reloadCollectionViews = {
-      self.setupCollections()
       DispatchQueue.main.async {
         self.dailyCollectionView.reloadData()
         self.hourlyCollectionView.reloadData()
       }
     }
+    self.setupCollections()
     viewModel.implementWeatherDatas()
     
   }

@@ -17,7 +17,7 @@ class HourlyCollectionViewCell: UICollectionViewCell {
     hourlyTmpLbl.textColor = .white
     hourlyTimeLbl.textColor = .white
     hourlyImageView.contentMode = .scaleAspectFit
-    hourlyImageView.image = UIImage(named: "\(hourly.weather.first!.icon)-i.png")
-    hourlyTmpLbl.text = "Min:\(hourly.temp.doubleToString())°"
+    hourlyImageView.image = UIImage(named: "\(hourly.weather.first!.icon ?? "0")-i.png")
+    hourlyTmpLbl.text = "\(hourly.temp.doubleToString())°"
   }
 }

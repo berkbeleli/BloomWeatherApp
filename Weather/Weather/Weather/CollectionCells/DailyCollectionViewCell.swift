@@ -19,8 +19,8 @@ class DailyCollectionViewCell: UICollectionViewCell {
     dailyMinTmpLbl.textColor = .white
     dailyImageView.contentMode = .scaleAspectFit
     dailyImageView.image = UIImage(named: "\(daily.weather?.first!.icon ?? "0")-i.png")
-    dailyMinTmpLbl.text = "Min:\(daily.temp?.min?.doubleToString() ?? "0")°"
-    dailyMaxTmpLbl.text = "Max:\(daily.temp?.max?.doubleToString() ?? "0")°"
+    dailyMinTmpLbl.text = "\(daily.temp?.min?.doubleToString() ?? "0")°"
+    dailyMaxTmpLbl.text = "\(daily.temp?.max?.doubleToString() ?? "0")°"
   }
   
 }
