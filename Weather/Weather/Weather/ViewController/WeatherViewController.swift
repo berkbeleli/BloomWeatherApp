@@ -31,6 +31,9 @@ class WeatherViewController: UIViewController {
   @IBOutlet private weak var hourlyCollectionView: UICollectionView!
   @IBOutlet private weak var backgroundImageView: UIImageView!
   
+  @IBOutlet private weak var dailyLbl: UILabel!
+  @IBOutlet private weak var hourlyLbl: UILabel!
+  
   private let refreshControl = UIRefreshControl()
   var viewModel = WeatherViewModel()
   
@@ -70,6 +73,8 @@ class WeatherViewController: UIViewController {
     pressureLbl.text = "Pressure".localize
     windSpeedLbl.text = "Wind speed".localize
     humidityLbl.text = "Humidity".localize
+    dailyLbl.text = "Daily".localize
+    hourlyLbl.text = "Hourly".localize
     backGroundImageAnimation()
     weatherAnimation()
   }

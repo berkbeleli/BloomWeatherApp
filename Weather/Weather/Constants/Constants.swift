@@ -11,6 +11,7 @@ import Foundation
 struct Constants {
   static let welcomeView = "WelcomeView"
   static let weatherView = "WeatherView"
+  static let searchView = "SearchView"
   
   struct cells {
     static let hourlyCollectionViewCell = "HourlyCollectionViewCell"
