@@ -10,4 +10,10 @@ import Foundation
 
 struct Constants {
   static let welcomeView = "WelcomeView"
+  static let weatherView = "WeatherView"
+  
+  struct cells {
+    static let hourlyCollectionViewCell = "HourlyCollectionViewCell"
+    static let dailyCollectionViewCell = "DailyCollectionViewCell"
+  }
 }

@@ -16,9 +16,9 @@ class WelcomeViewModel: NSObject {
   
   var showError: (() -> ())?
   
-  private func getWeatherData() {
+  func getWeatherData(completion: @escaping () -> ()) {
     self.weather.getWeather {
-      print("successs")
+      completion()
     }
   }
   
@@ -31,7 +31,7 @@ class WelcomeViewModel: NSObject {
            if path.status == .satisfied {
                self.getActualLocation()
                if self.locationManager.authorizationStatus == .denied {
-                   self.getWeatherData()
+                 print("Denied")
                }
            } else {
                DispatchQueue.main.async {
@@ -61,7 +61,7 @@ extension WelcomeViewModel: CLLocationManagerDelegate {
       let manager = CLLocationManager()
       switch manager.authorizationStatus {
       case .notDetermined, .restricted, .denied:
-        getWeatherData()
+        print("Denied")
       case .authorizedAlways, .authorizedWhenInUse:
         print("Accessed")
       default:
@@ -75,7 +75,6 @@ extension WelcomeViewModel: CLLocationManagerDelegate {
     weather.lat = location.latitude
     weather.lon = location.longitude
     locationManager.stopUpdatingLocation()
-    getWeatherData()
   }
   
 }

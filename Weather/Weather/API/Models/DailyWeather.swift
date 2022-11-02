@@ -10,8 +10,15 @@ import Foundation
 class DailyWeather: Codable {
   let lat: Double?
   let lon: Double?
+  let hourly: [Hourly]?
   let daily: [Daily]?
   let current: Current?
+}
+
+class Hourly: Codable {
+    let dt: TimeInterval
+    let weather: [WeatherIcon]
+    let temp: Double
 }
 
 class Daily: Codable {

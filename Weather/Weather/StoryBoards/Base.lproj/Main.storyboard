@@ -174,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JcS-3v-Iqo">
-                                <rect key="frame" x="-100" y="0.0" width="590" height="844"/>
+                                <rect key="frame" x="-200" y="0.0" width="790" height="844"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmY-Rx-PNl">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
@@ -747,9 +747,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JcS-3v-Iqo" firstAttribute="bottom" secondItem="Pjb-EW-Fz9" secondAttribute="bottom" id="H8n-iC-DDu"/>
-                            <constraint firstItem="JcS-3v-Iqo" firstAttribute="leading" secondItem="Pjb-EW-Fz9" secondAttribute="leading" constant="-100" id="JjC-VQ-b5c"/>
+                            <constraint firstItem="JcS-3v-Iqo" firstAttribute="leading" secondItem="Pjb-EW-Fz9" secondAttribute="leading" constant="-200" id="JjC-VQ-b5c"/>
                             <constraint firstItem="fLy-Lj-eVA" firstAttribute="bottom" secondItem="RmY-Rx-PNl" secondAttribute="bottom" id="QLj-3K-7WT"/>
-                            <constraint firstAttribute="trailing" secondItem="JcS-3v-Iqo" secondAttribute="trailing" constant="-100" id="RdW-KI-NrT"/>
+                            <constraint firstAttribute="trailing" secondItem="JcS-3v-Iqo" secondAttribute="trailing" constant="-200" id="RdW-KI-NrT"/>
                             <constraint firstItem="RmY-Rx-PNl" firstAttribute="top" secondItem="fLy-Lj-eVA" secondAttribute="top" id="TbS-Ne-Eqe"/>
                             <constraint firstAttribute="trailing" secondItem="RmY-Rx-PNl" secondAttribute="trailing" id="gjg-j5-XIM"/>
                             <constraint firstItem="RmY-Rx-PNl" firstAttribute="leading" secondItem="Pjb-EW-Fz9" secondAttribute="leading" id="pZs-8K-Ptz"/>

@@ -66,8 +66,12 @@ class WelcomeViewController: UIViewController {
   }
 
   @IBAction func continueButtonPressed(_ sender: UIButton) {
-    
-    //TO-DO: - OPEN NEXT PAGE
-  }
+    guard let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: Constants.weatherView) as? WeatherViewController else { return }
   
+    viewModel.getWeatherData {
+      vc.modalPresentationStyle = .fullScreen
+      vc.viewModel.weather = self.viewModel.weather
+      self.navigationController?.pushViewController(vc, animated: true)
+    }
+  }
 }

@@ -21,7 +21,7 @@ class Binding<T> {
     self.value = value
   }
   
-  func bin(_ listener: Listener?) {
+  func bind(_ listener: Listener?) {
     self.listerner = listener
     listener?(value)
   }
