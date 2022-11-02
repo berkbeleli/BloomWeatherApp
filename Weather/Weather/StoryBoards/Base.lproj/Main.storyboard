@@ -168,13 +168,13 @@
         <!-- - -->
         <scene sceneID="sXQ-Pe-VFc">
             <objects>
-                <viewController storyboardIdentifier="WeatherViewController" id="Cm0-Rj-D4q" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WeatherView" id="Cm0-Rj-D4q" customClass="WeatherViewController" customModule="Weather" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pjb-EW-Fz9">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JcS-3v-Iqo">
-                                <rect key="frame" x="-150" y="0.0" width="690" height="844"/>
+                                <rect key="frame" x="-100" y="0.0" width="590" height="844"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmY-Rx-PNl">
                                 <rect key="frame" x="0.0" y="47" width="390" height="763"/>
@@ -549,7 +549,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DailyCollectionViewCell" reuseIdentifier="DailyCollectionViewCell" id="DNR-pk-7iw" customClass="DailyCollectionViewCell" customModule="YourWeather" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DailyCollectionViewCell" reuseIdentifier="DailyCollectionViewCell" id="DNR-pk-7iw" customClass="DailyCollectionViewCell" customModule="Weather" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="-0.33333333333333331" width="128" height="54"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aJh-4m-tms">
@@ -633,10 +633,11 @@
                                                                 </collectionViewCellContentView>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <connections>
-                                                                    <outlet property="dailyDate" destination="WMs-7j-Uib" id="fYQ-MD-4Iy"/>
+                                                                    <outlet property="dailyDateLbl" destination="WMs-7j-Uib" id="CFq-82-x1h"/>
                                                                     <outlet property="dailyImage" destination="aet-vt-lMu" id="FHq-2k-b1X"/>
-                                                                    <outlet property="dailyMaxTemp" destination="HYe-ng-lVt" id="zB7-IZ-a0u"/>
-                                                                    <outlet property="dailyMinTemp" destination="Lip-ja-hax" id="JHr-2o-CY7"/>
+                                                                    <outlet property="dailyImageView" destination="aet-vt-lMu" id="jvk-kc-b4W"/>
+                                                                    <outlet property="dailyMaxTmpLbl" destination="HYe-ng-lVt" id="6E0-Ag-sU3"/>
+                                                                    <outlet property="dailyMinTmpLbl" destination="Lip-ja-hax" id="9TN-30-xea"/>
                                                                 </connections>
                                                             </collectionViewCell>
                                                         </cells>
@@ -663,7 +664,7 @@
                                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HourlyCollectionViewCell" reuseIdentifier="HourlyCollectionViewCell" id="eJA-8m-EUB" customClass="HourlyCollectionViewCell" customModule="YourWeather" customModuleProvider="target">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HourlyCollectionViewCell" reuseIdentifier="HourlyCollectionViewCell" id="eJA-8m-EUB" customClass="HourlyCollectionViewCell" customModule="Weather" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="3.3333333333333335" width="78" height="100"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="n5U-hb-ua3">
@@ -705,9 +706,9 @@
                                                                 </collectionViewCellContentView>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <connections>
-                                                                    <outlet property="hourlyImageVew" destination="ijD-rZ-O9V" id="He0-dq-wA4"/>
-                                                                    <outlet property="hourlyTemp" destination="WvK-hN-the" id="4XT-25-dhJ"/>
-                                                                    <outlet property="hourlyTime" destination="MT8-7n-ZUJ" id="kd7-Rr-DIT"/>
+                                                                    <outlet property="hourlyImageView" destination="ijD-rZ-O9V" id="tv4-RW-f97"/>
+                                                                    <outlet property="hourlyTimeLbl" destination="MT8-7n-ZUJ" id="dSh-Nz-b32"/>
+                                                                    <outlet property="hourlyTmpLbl" destination="WvK-hN-the" id="Nse-aD-FwE"/>
                                                                 </connections>
                                                             </collectionViewCell>
                                                         </cells>
@@ -746,9 +747,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JcS-3v-Iqo" firstAttribute="bottom" secondItem="Pjb-EW-Fz9" secondAttribute="bottom" id="H8n-iC-DDu"/>
-                            <constraint firstItem="JcS-3v-Iqo" firstAttribute="leading" secondItem="Pjb-EW-Fz9" secondAttribute="leading" constant="-150" id="JjC-VQ-b5c"/>
+                            <constraint firstItem="JcS-3v-Iqo" firstAttribute="leading" secondItem="Pjb-EW-Fz9" secondAttribute="leading" constant="-100" id="JjC-VQ-b5c"/>
                             <constraint firstItem="fLy-Lj-eVA" firstAttribute="bottom" secondItem="RmY-Rx-PNl" secondAttribute="bottom" id="QLj-3K-7WT"/>
-                            <constraint firstAttribute="trailing" secondItem="JcS-3v-Iqo" secondAttribute="trailing" constant="-150" id="RdW-KI-NrT"/>
+                            <constraint firstAttribute="trailing" secondItem="JcS-3v-Iqo" secondAttribute="trailing" constant="-100" id="RdW-KI-NrT"/>
                             <constraint firstItem="RmY-Rx-PNl" firstAttribute="top" secondItem="fLy-Lj-eVA" secondAttribute="top" id="TbS-Ne-Eqe"/>
                             <constraint firstAttribute="trailing" secondItem="RmY-Rx-PNl" secondAttribute="trailing" id="gjg-j5-XIM"/>
                             <constraint firstItem="RmY-Rx-PNl" firstAttribute="leading" secondItem="Pjb-EW-Fz9" secondAttribute="leading" id="pZs-8K-Ptz"/>
@@ -758,6 +759,30 @@
                     <navigationItem key="navigationItem" title="-" id="hBH-CG-3R5">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="search" id="BBa-OX-tQ9"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="actualWeatherContainerView" destination="HcE-Qh-r97" id="N8n-Md-5hf"/>
+                        <outlet property="backgroundImageView" destination="JcS-3v-Iqo" id="Q5w-5w-ur0"/>
+                        <outlet property="currentFeelingLbl" destination="B8p-zo-83L" id="9te-sh-gzz"/>
+                        <outlet property="currentHumidityLbl" destination="sIr-HG-UvY" id="ZYm-Vz-cfN"/>
+                        <outlet property="currentMaxTemperatureLbl" destination="Iix-o0-3Ab" id="OU1-6I-7iF"/>
+                        <outlet property="currentMinTemperatureLbl" destination="Cpo-2k-Bfz" id="Yk3-ZZ-Mfk"/>
+                        <outlet property="currentPressureLbl" destination="c2F-nk-xH8" id="l8O-u8-MTL"/>
+                        <outlet property="currentTemperatueLbl" destination="rug-Gn-kch" id="55T-m7-nku"/>
+                        <outlet property="currentTimeLbl" destination="NFE-hH-6br" id="KQ8-eU-K2D"/>
+                        <outlet property="currentWeatherImage" destination="FUR-eQ-6zw" id="9aR-j6-kBz"/>
+                        <outlet property="currentWindSpeedLbl" destination="gRF-vV-elr" id="Bz8-rV-PnE"/>
+                        <outlet property="currrentDescription" destination="LhF-id-sCp" id="dDj-jT-9dC"/>
+                        <outlet property="dailyCollectionView" destination="vKI-5X-ka2" id="R2w-OV-f7N"/>
+                        <outlet property="feelingLbl" destination="CRl-lb-rIF" id="xdK-1Q-OsQ"/>
+                        <outlet property="hourlyCollectionView" destination="FbU-c0-TyN" id="Z69-zq-h51"/>
+                        <outlet property="humidityLbl" destination="zRs-Ll-kU8" id="l45-s9-31s"/>
+                        <outlet property="maxTemperatureLbl" destination="4CT-u7-5Cf" id="amH-ap-71G"/>
+                        <outlet property="minTemperatureLbl" destination="QwD-Tn-G30" id="t9D-V9-kbE"/>
+                        <outlet property="pressureLbl" destination="pVZ-vr-vEO" id="yXs-ys-wNW"/>
+                        <outlet property="shadowContainerView" destination="sv4-ef-Ffq" id="9eL-G0-LA0"/>
+                        <outlet property="updateScrollView" destination="RmY-Rx-PNl" id="XCi-KD-AUq"/>
+                        <outlet property="windSpeedLbl" destination="KxE-AD-4Fw" id="JH9-sU-bDf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTc-SU-adS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
