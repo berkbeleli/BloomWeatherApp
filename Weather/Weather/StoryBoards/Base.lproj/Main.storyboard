@@ -841,7 +841,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SelfLocationTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelfLocationTableViewCell" rowHeight="55" id="sjz-A2-5Gc" customClass="SelfLocationTableViewCell" customModule="YourWeather" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelfLocationTableViewCell" rowHeight="55" id="sjz-A2-5Gc" customClass="SelfLocationTableViewCell" customModule="Weather" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sjz-A2-5Gc" id="3jB-nn-UdO">
@@ -878,11 +878,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="imageViewCell" destination="DW9-XP-97i" id="Awd-tC-cjx"/>
-                                            <outlet property="locationLabel" destination="BnE-zx-9gn" id="A1R-BQ-9jl"/>
+                                            <outlet property="locationIconimg" destination="DW9-XP-97i" id="fGy-vq-5yL"/>
+                                            <outlet property="locationLbl" destination="BnE-zx-9gn" id="5Wx-lE-uxg"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" id="C50-Y4-IQb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" id="C50-Y4-IQb" customClass="SearchCitiesTableViewCell" customModule="Weather">
                                         <rect key="frame" x="0.0" y="105" width="390" height="65.666664123535156"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C50-Y4-IQb" id="OOD-LF-Wj0">
@@ -916,8 +916,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cityName" destination="H80-tX-yLk" id="fw2-9b-Gmh"/>
-                                            <outlet property="countryName" destination="bcC-Qc-3n2" id="z1P-i9-Fa2"/>
+                                            <outlet property="cityNameLbl" destination="H80-tX-yLk" id="JAE-b9-7Rq"/>
+                                            <outlet property="countryNameLbl" destination="bcC-Qc-3n2" id="atW-cC-Dt2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

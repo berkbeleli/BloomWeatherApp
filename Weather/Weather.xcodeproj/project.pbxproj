@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A87C1163752374DE1BF54B30 /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB66B7D66494C135FEC04F0 /* Pods_Weather.framework */; };
 		C00D714D2913058A00787790 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D714C2913058A00787790 /* SearchViewController.swift */; };
+		C00D7150291307E800787790 /* SelfLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D714F291307E800787790 /* SelfLocationTableViewCell.swift */; };
+		C00D71522913080200787790 /* SearchCitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D71512913080200787790 /* SearchCitiesTableViewCell.swift */; };
 		C082676A29127EAC009E46F9 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082676929127EAC009E46F9 /* WeatherViewController.swift */; };
 		C082676D29127F45009E46F9 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082676C29127F45009E46F9 /* Binding.swift */; };
 		C082677029128577009E46F9 /* HourlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C082676F29128577009E46F9 /* HourlyCollectionViewCell.swift */; };
@@ -45,6 +47,8 @@
 		3C3565CC9BDD8A7E79CFB649 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 		7EB66B7D66494C135FEC04F0 /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C00D714C2913058A00787790 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C00D714F291307E800787790 /* SelfLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfLocationTableViewCell.swift; sourceTree = "<group>"; };
+		C00D71512913080200787790 /* SearchCitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCitiesTableViewCell.swift; sourceTree = "<group>"; };
 		C082676929127EAC009E46F9 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		C082676C29127F45009E46F9 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		C082676F29128577009E46F9 /* HourlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		C00D714A2913056900787790 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				C00D714E291307A400787790 /* CollectionCells */,
 				C00D714B2913057300787790 /* ViewController */,
 			);
 			path = Search;
@@ -115,6 +120,15 @@
 				C00D714C2913058A00787790 /* SearchViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C00D714E291307A400787790 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				C00D714F291307E800787790 /* SelfLocationTableViewCell.swift */,
+				C00D71512913080200787790 /* SearchCitiesTableViewCell.swift */,
+			);
+			path = CollectionCells;
 			sourceTree = "<group>";
 		};
 		C082676729127E8D009E46F9 /* Weather */ = {
@@ -473,9 +487,11 @@
 				C0826774291287B6009E46F9 /* Double+Extension.swift in Sources */,
 				C0826777291291E3009E46F9 /* UIImageView+Extension.swift in Sources */,
 				C0F13A6529106B5600394BC5 /* AppDelegate.swift in Sources */,
+				C00D7150291307E800787790 /* SelfLocationTableViewCell.swift in Sources */,
 				C0F13A8429106E9A00394BC5 /* LoadingViewModel.swift in Sources */,
 				C0BA926629118AE000944FCF /* String+Extension.swift in Sources */,
 				C082677029128577009E46F9 /* HourlyCollectionViewCell.swift in Sources */,
+				C00D71522913080200787790 /* SearchCitiesTableViewCell.swift in Sources */,
 				C082676D29127F45009E46F9 /* Binding.swift in Sources */,
 				C0F13A6729106B5600394BC5 /* SceneDelegate.swift in Sources */,
 				C08267722912858B009E46F9 /* DailyCollectionViewCell.swift in Sources */,
