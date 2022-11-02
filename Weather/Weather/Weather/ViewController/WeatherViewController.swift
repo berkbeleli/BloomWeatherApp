@@ -157,6 +157,10 @@ class WeatherViewController: UIViewController {
     
   }
   
+  @IBAction func searchButtonPressed(_ sender: UIBarButtonItem) {
+  }
+  
+  
 }
 
 extension WeatherViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
