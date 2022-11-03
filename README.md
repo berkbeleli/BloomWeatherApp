@@ -22,6 +22,7 @@ BloomWeather is a weather app that provides you accurate forecast according to y
 - All of the Data fetched from an API. ("Don't forget to place your API Key")
 - You can access 7 days and hourly weather datas
 - You can look for weather data for more than 200.000 cities around the world.
+- LottieFiles package used for loading animation.
 - Supported Languages: English, Turkish
 
 ## ScreenShots
